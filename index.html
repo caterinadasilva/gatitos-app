@@ -10,6 +10,30 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+<header>
+	<div class="container">
+		<div class="row">
+			<h1>Login con SDK de Facebook</h1>
+		</div>
+	</div>
+</header>
+<section id="" >
+	<div class="container">
+		<div class="row">
+			<fb:login-button 
+			  scope="public_profile,email"
+			  onlogin="checkLoginState();">
+			</fb:login-button>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<div class="row">
+			<small>Desarrollado por Caterina Da Silva</small>
+		</div>
+	</div>
+</footer>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -29,27 +53,6 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-<header>
-	<div class="container">
-		<div class="row">
-			<h1>Login con SDK de Facebook</h1>
-		</div>
-	</div>
-</header>
-<section id="" >
-	<div class="container">
-		<div class="row">
-			<div class="fb-login-button" data-width="500px" data-max-rows="2" data-size="medium" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true"></div>
-		</div>
-	</div>
-</section>
-<footer>
-	<div class="container">
-		<div class="row">
-			<small>Desarrollado por Caterina Da Silva</small>
-		</div>
-	</div>
-</footer>
 <script src="assets/js/script.js" type="text/javascript"></script>
 </body>
 </html>
